@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Cafeteria Pre-Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Office Cafeteria Pre-Order</h1>
+        <div class="form-container">
+            <label for="employeeId">Employee ID:</label>
+            <input type="text" id="employeeId" required>
+            
+            <label for="employeeName">Employee Name:</label>
+            <input type="text" id="employeeName" required>
+        </div>
+        
+        <div class="menu-container">
+            <h2>Menu</h2>
+            <div class="menu-item">
+                <input type="checkbox" id="item1" data-price="50">
+                <label for="item1">Sambar Rice Bowl - ₹50</label>
+            </div>
+            <div class="menu-item">
+                <input type="checkbox" id="item2" data-price="50">
+                <label for="item2">Curd Rice Bowl - ₹50</label>
+            </div>
+            <div class="menu-item">
+                <input type="checkbox" id="item3" data-price="100">
+                <label for="item3">Chicken Biryani Bowl - ₹100</label>
+            </div>
+            <div class="menu-item">
+                <input type="checkbox" id="item4" data-price="160">
+                <label for="item4">Prawn Biryani Bowl - ₹160</label>
+            </div>
+			<div class="menu-item">
+                <input type="checkbox" id="item4" data-price="110">
+                <label for="item5">Veg Thali - ₹110</label>
+            </div>
+			<div class="menu-item">
+                <input type="checkbox" id="item4" data-price="150">
+                <label for="item6">Non-Veg Thali - ₹150</label>
+            </div>
+        </div>
+        
+        <button onclick="placeOrder()">Place Order</button>
+        
+        <div id="orderSummary" class="order-summary"></div>
+        
+        <div id="seatsAvailable" class="seats-available">
+            <h2>Seats Available: <span id="availableSeats">100</span></h2>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
